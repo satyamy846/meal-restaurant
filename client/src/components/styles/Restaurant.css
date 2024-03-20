@@ -1,0 +1,38 @@
+.restaurant{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 40px 40px;
+}
+
+.search-container{
+    width: 35%;
+    display: flex;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.search-container input{
+    width: 100%;
+    border: none;
+    background-color: #dbdbdb;
+    border-radius: 10px;
+    text-indent: 8px;
+}
+
+.search-container button{
+    background-color: #000;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 8px;
+    cursor: pointer;
+}

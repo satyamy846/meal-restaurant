@@ -1,0 +1,35 @@
+
+#header{
+    height: 60px;
+    background-color: #000;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #fff;
+}
+.header-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+}
+
+.header-container .cart-item{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.header-container:last-child img{
+    width: 20px;
+}
+
+.header-container li{
+    padding-right: 30px;
+}
+
+.cart-item img{
+    color: #fff;
+}
