@@ -28,6 +28,7 @@
 
 .header-container li{
     padding-right: 30px;
+    cursor: pointer;
 }
 
 .cart-item img{

@@ -1,15 +1,18 @@
-import React, { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { useSelector } from 'react-redux';
 import { IMAGE_CDN_URL } from '../config';
+import UserContext from '../ContextAPI/UserContext';
 
 const Cart = () => {
     const [cartData, setCartData] = useState([]);
     const cartItems = useSelector((state) => state.cartSlice.items);
+    const {user} = useContext(UserContext);
     useEffect(() => {
         setCartData(cartItems);
     }, [cartItems])
     return (
         <div id='cart' style={{display:"flex", flexWrap:"wrap", justifyContent:"center", alignItems:"center", paddingTop:"40px"}}>
+            <div>hello I am {user?.username}</div>
             {
                 cartData && cartData.map((item) => (
                     <>

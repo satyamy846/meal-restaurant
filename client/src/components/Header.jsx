@@ -19,9 +19,9 @@ const Header = () => {
         console.log(cartData)
         }
         <div id="header">
-            <ul className="header-container" style={{cursor:"pointer"}}>
+            <ul className="header-container" >
                 <li onClick={()=> navigate("/")}>Home</li>
-                <li>Login</li>
+                <li onClick={() => navigate("/login")}>Login</li>
                 <li>SignUp</li>
                 <li className='cart-item' onClick={()=> navigate("/cart")}>
 

@@ -1,0 +1,73 @@
+
+#youtube{
+    width: 100%;
+}
+
+.youtube-container{
+    width: 90%;
+    background-color: wheat;
+    margin: auto;
+}
+
+.youtube-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.youtube-header ul{
+    list-style: none;
+}
+
+.youtube-content-container{
+    width: 100%;
+    display: flex;
+}
+
+.youtube-sidebar{
+    width: 10%;
+    background-color: aqua;
+}
+
+.youtube-sidebar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.youtube-card-container{
+    width: 90%;
+    background-color: blueviolet;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+.youtube-card{
+
+}
+
+.youtube-card img{
+    width: 100%;
+}
+
+@media screen and (max-width:900px) {
+    .youtube-card-container{
+        width: 90%;
+        background-color: blueviolet;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width:600px) {
+    .youtube-card-container{
+        width: 90%;
+        background-color: blueviolet;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+}
